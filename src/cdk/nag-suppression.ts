@@ -41,6 +41,7 @@ export const nagSuppression = async (params: RuleParamsNagSuppression) => {
 
       const resourceSuppressionsRegex = /\.addResourceSuppressions\(/
 
+      // Be a compositor
       R.compose<
         [chunks: Chunk[]],
         Array<Array<Change>>,
